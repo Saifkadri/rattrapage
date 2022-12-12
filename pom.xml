@@ -36,15 +36,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<distributionManagement>
-                   <repository>
-                   <id>deploymentRepo</id>
-                   <name>Nexus Repository</name>
-                   <url>http://192.168.1.135:8081/repository/maven-releases/</url&gt;
-   
-    </repository>
-   
-    </distributionManagement>
+	
 		
 	</dependencies>
 
@@ -56,5 +48,14 @@
 			</plugin>
 		</plugins>
 	</build>
+		<distributionManagement>
+                   <repository>
+                   <id>deploymentRepo</id>
+                   <name>Nexus Repository</name>
+			   <url>http://192.168.33.10:8081/repository/maven-releases/</url>
+   
+    </repository>
+   
+    </distributionManagement>
 
 </project>
