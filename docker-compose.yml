@@ -8,7 +8,7 @@ services:
       - MYSQL_DATABASE=$MYSQLDB_DATABASE
     ports:
       - 3306:3306
-  rattrapage_back:
-    image :saifkadri/rattrapage-1.0:latest
+  saifkadri:
+    image :saifkadri/examen-rattrapage-1.0
   
   
